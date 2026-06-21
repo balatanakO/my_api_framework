@@ -29,3 +29,5 @@ jobs:
 
       - name: 考官上场
         run: pytest -v --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
